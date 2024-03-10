@@ -20,9 +20,12 @@ make -j4 && ./main -m ${tmodel} -p "Write a sample shell script"
 ```
 
 - Web
+
 ```
 cd llama.cpp
-tmodel="../Yi-34B-Chat"
+
+# This model is quite good
+tmodel="../yi-6b/yi-chat-6b.Q5_K_M.gguf"
 ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model ${tmodel}
 
 http://0.0.0.0:8080
